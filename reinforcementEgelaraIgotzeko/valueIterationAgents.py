@@ -71,8 +71,8 @@ class ValueIterationAgent(ValueEstimationAgent):
                 if not self.mdp.isTerminal(e):
                     mejor_accion = self.getAction(e)
                     best_q_value = self.computeQValueFromValues(e, mejor_accion)
-                    nuevos_valores[e] = best_q_value    
-            self.values = nuevos_valores.copy()
+                    nuevos_valores[e] = best_q_value   
+            self.values = nuevos_valores.copy() #guardamos los valores de la iteracion anterior
             print("ttt")
             print(self.iterations)
                 
