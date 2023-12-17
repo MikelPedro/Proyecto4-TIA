@@ -20,8 +20,8 @@
 # value iteration.
 
 def question2():
-    answerDiscount = None
-    answerNoise = None
+    answerDiscount = 0.9
+    answerNoise = 0.01  # noise muy bajo para que no se desvie de la ruta
     return answerDiscount, answerNoise
 
 if __name__ == '__main__':
